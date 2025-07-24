@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./css/reset.css" />  
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="./js/main.js" defer></script>
+
+    <!-- Forbidden 금지됨 -->
+
+    <script
+      src="https://kit.fontawesome.com/9691ef0427.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- 애니메이션 적용 -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typeit : 텍스트 타이핑 효과 -->
+    <script src="https://unpkg.com/typeit@8.8.7/dist/index.umd.js"></script>        
+
+    <title>코딩 포토폴리오</title>
+
+    <!-- 33. SEO, SNS 공유 미리보기 :  -->
+    <!-- 1. 웹사이트의 설명  --------------------- -->
+    <meta
+        name="description"
+        content="짐코딩의 웹 개발 포트폴리오입니다. 주로 프론드엔드와 백엔드 웹 개발을 다루고 있습니다."
+      />
+    <!-- 2. 웹사이트의 저자를  --------------------- -->
+    <meta name="author" content="짐코딩" />
+    <!-- 3. 웹사이트의 keyword  -------------------- -->
+    <meta name="keywords" content="웹개발,프론트엔드,백엔드" />
+
+    <!-- 4. OG Tag -->
+    <meta property="og:title" content="짐코딩 포트폴리오" />
+    <meta
+      property="og:description"
+      content="짐코딩의 웹 개발 포트폴리오입니다. 주로 프론드엔드와 백엔드 웹 개발을 다루고 있습니다."
+    />
+    <!-- 5. 미리보기 이미지-------------------------->
+    <meta
+      property="og:image"
+      content="https://yourwebsite.com/images/og-image.jpg"
+    />
+    <!-- 6. 나머지도 몇개 더 설정-------------------------->
+    <meta property="og:url" content="https://yourwebsite.com" />
+    <meta property="og:type" content="website" />
+
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <!-- 이미지(로고) -->
+        <!-- <a href="#"> 은 스크롤을 최상으로 이동한다 -->      
+        <div class="nav__logo">
+          <img
+            class="nav__img"
+            src="./images/logo--dark.png" 
+            alt="늑대왕 로그"
+          />
+          <a href="#" class="nav__brand">패키니즈왕</a>
+        </div>
+        <!-- 메뉴 -->
+        <div class="nav__menu" id="nav__menu">      
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>  
+            </li> 
+          </ul>
+        </div>
+        <!-- 햄버그 아이콘 : 01-27. Breakpoint, header   -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="fa-solid fa-bars"></i>   
+        </div>
+      </nav>
+    </header> 
+
+    <main>
+      <!-- home 홈페이지 인사말-->
+      <section class="home container section" id="home"> 
+        <!-- Home Data -->
+        <div class="home__data">
+          <h2 class="home__title" id="typeit">  
+          </h2>
+
+          <a href="#contact" class="button">contact></a>
+
+          <div class="home__social">
+            <!-- target="_blank" : 새 창으로 연다 -->
+            <!-- <a
+              href="https://www.youtube.com/@gymcoding" -->
+            <a
+              href="https://www.gymcoding.co/"
+              target="_blank"
+              title="짐코딩 유튜브 링크"
+            >
+              <i class="fa-brands fa-youtube home__social-icon"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/gymcoding/" 
+              target="_blank"
+              title="짐코딩 인스타그램 링크"
+            >
+              <i class="fa-brands fa-instagram home__social-icon"></i>
+            </a>
+
+            <a
+              href="https://github.com/gymcoding"
+              target="_blank"
+              title="짐코딩 깃헙 링크"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a
+              href="https://www.inflearn.com/"
+              target="_blank"
+              title="인프런 링크"
+            >
+              <i class="fa-brands fa-github home__social-icon"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Home Image -->   
+        <img
+          class="home__img"
+          src="./images/about/yuki.jpg"
+          alt="유키 프로필 이미지"
+        />
+      </section>
+
+      <!-- About -->  
+      <section class="about section bg-grey-1" id="about"> 
+        <h2 class="section__title">About</h2>
+
+        <div class="about__container container">
+          <!-- 이미지 -->
+          <img
+            class="about__img"
+            src="./images/about/yuki_abt.jpg"
+            alt="유키 프로필"
+          />
+          <div class="about__data">
+            <h3 class="about__subtitle">유키를 소개합니다.</h3>
+            <p class="about__text">
+              유키는 페키니즈로 2017년 1월 1일생 입니다. 영국에서 왔습니다. 원래
+              페케니즈는 중국에서 유래한 견종으로,'베이징의 개'라 하여
+              페키니즈라는 영어명이 붙었다.
+              <br /><br />
+              [1] 중국 현지에서는 '징빠(京巴, jīngbā)'라고 부르는 듯. 티베트의
+              수도승들이 기르던 견종인 티베탄 스파니엘에서 유래한 것으로 알려진
+              품종. 또한, 시추와 퍼그는 페키니즈의 개량종이라는 연구 결과가
+              있다.
+              <br /><br />
+              마지막 황제에서 서태후가 키우는 모습으로 등장. 어린 푸이랑 함께
+              논다. 이후, 푸이의 후궁인 문수가 키우는 걸로 잠시 등장한다.
+              서태후가 키우는 페키니즈는 보통 중국에 있던 황색 페키니즈지만
+              문수가 키우는 페키니즈는 흰색 계통이다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--skills -->
+      <section class="skills section" id="skills"> 
+          <h2 class="section__title">Skills</h2> 
+
+        <div class="skills__container container">      
+          <!-- 스킬 데이터 --> 
+          <div>
+            <h3 class="skills__subtitle">Profesional Skills</h3>  
+            <p class="skills__text">  
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium quae libero delectus. Fuga tenetur quam magnam
+              accusamus incidunt itaque assumenda voluptatum vero, animi nisi
+              fugiat nemo debitis reprehenderit ab deleniti!
+            </p>
+            <div>
+              <article class="skills__data">
+                <div>
+                  <!-- icon -->
+                  <i class="fa-brands fa-html5 skills__icon"></i> 
+                  <!-- skill name --> 
+                  <span class="skills__name">HTML5</span>
+                </div>
+                <div>
+                  <!-- percentage -->
+                  <span class="skills__percentage">85%</span>
+                </div>
+
+                <progress class="skills__progress" id="html5" max="100" value="85"></progress> 
+              </article>
+              <article class="skills__data">
+                <div class="skills__names">
+                  <!-- icon -->
+                  <i class="fa-brands fa-css3-alt skills__icon"></i> 
+                  <!-- skill name -->
+                  <span class="skills__name">CSS3</span>
+                </div>
+                <div>
+                  <!-- percentage -->
+                  <span class="skills__percentage">80%</span> 
+                </div>
+
+                <progress class="skills__progress" id="css3" max="100" value="80"></progress>
+              </article>
+              <article class="skills__data">
+                <div class="skills__names">
+                  <!-- icon -->
+                  <i class="fa-brands fa-js skills__icon"></i>
+                  <!-- skill name -->
+                  <span class="skills__name">JavaScript</span>
+                </div>
+                <div>
+                  <!-- percentage -->
+                  <span class="skills__percentage">90%</span>
+                </div>
+
+                <progress class="skills__progress" id="javascript" max="100" value="90"></progress>
+              </article>
+              <article class="skills__data"> 
+                <div class="skills__names">
+                  <!-- icon -->
+                  <i class="fa-solid fa-server skills__icon"></i> 
+                  <!-- skill name -->
+                  <span class="skills__name">Back-end</span>
+                </div>
+                <div> 
+                  <!-- percentage -->
+                  <span class="skills__percentage">95%</span>
+                </div>
+
+                <progress class="skills__progress" id="backend" max="100" value="95"></progress>
+              </article>
+            </div>
+          </div>
+ 
+          <!-- 이미지 -->
+          <div>
+            <img  class="skills__img" src="./images/skills/desktop.jpg" alt="데스크탑 이미지" />
+          </div>
+        </div>
+      </section>  
+
+      <!--work -->       
+      <section class="section" id="work">
+        <h2 class="section__title">Work</h2>
+        <div class="work__container container">  
+          <a class="work__link"
+            href="https://www.gymcoding.co/courses/frontend-fly"
+            target="_blank"
+            title="프론트엔드 날개달기 강의"
+          >
+            <img class="work__img"
+              src="./images/work/front-end-fly.png"
+              alt="프론트엔드 날개달기 강의"
+            />
+          </a>
+
+          <a class="work__link"
+            href="https://www.gymcoding.co/courses/vue-basic"
+            target="_blank"
+            title="Vue3 완벽 마스터 - 기본편 강의"
+          >
+            <img class="work__img"
+              src="./images/work/vue-3-basic.png"
+              alt="Vue3 완벽 마스터 - 기본편 강의"
+            />
+          </a>
+
+          <a class="work__link"
+            href="https://www.gymcoding.co/courses/vue-practice"
+            target="_blank"
+            title="Vue3 완벽 마스터 - 실전편 강의"
+          >
+            <img class="work__img"
+              src="./images/work/vue-3-practice.png"
+              alt="Vue3 완벽 마스터 - 실전편 강의"
+            />
+          </a>
+
+          <a class="work__link"
+            href="https://www.gymcoding.co/courses/quasar"
+            target="_blank"
+            title="퀘이사 완벽 마스터 강의"
+          >
+            <img class="work__img" src="./images/work/quasar.png" alt="퀘이사 완벽 마스터 강의" />
+          </a>
+
+          <a class="work__link"
+            href="https://www.gymcoding.co/courses/vue-firebase"
+            target="_blank"
+            title="Vue3 & Firebase 커뮤니티 풀스택 강의"
+          >
+            <img class="work__img"
+              src="./images/work/vue-3-firebase.png"
+              alt="Vue3 & Firebase 커뮤니티 풀스택 강의"
+            />
+          </a>
+
+          <a class="work__link"
+            href="https://www.gymcoding.co/courses/nuxt"
+            target="_blank"
+            title="Vue3 끝판왕 : Nuxt3 완벽 마스터"
+          >
+            <img class="work__img"
+              src="./images/work/nuxt-3.png" 
+              alt="Vue3 끝판왕 : Nuxt3 완벽 마스터"
+            />
+          </a>
+        </div>
+      </section> 
+
+      <!-- 스킬 데이터 -->
+
+      <!--contact -->
+      <section class="section" id="contact">
+        <h2 class="section__title">Contact</h2> 
+        <div class="contact__container container">   
+          <form  id="contactForm" class="contact__form">
+            <input class="contact__input" type="text" name="name" placeholder="이름" required />
+          <!-- <input type="email" placeholder="이메일" required> -->
+            <input class="contact__input"type="text" name="subject" placeholder="제목" required />
+          <!-- <textarea placeholder="메시지" required></textarea> -->
+            <textarea
+              class="contact__input" 
+              name="message"
+              id="message"
+              cols="30"
+              rows="30"
+              placeholder="내용"
+              required
+            ></textarea>
+          <!-- <button type="submit">보내기</button> -->
+            <button  class="contact__button button">보내기</button>  
+          </form>
+        </div>
+      </section>
+      <button class="floating-button" id="floating-button">
+        <i class="fa-regular fa-circle-up floating-button-icon"></i>  
+    </main> 
+ 
+    <!--Footer --> 
+    <footer class="footer"> 
+      <p class="footer__title">짐코딩</p>  
+      <div class="footer__social">
+        <a
+          href="https://www.youtube.com/@gymcoding"  
+          target="_blank"
+          title="짐코딩 유튜브 링크"
+        >
+          <i class="fa-brands fa-youtube footer__icon"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/gymcoding/"
+          target="_blank"
+          title="짐코딩 인스타그램 링크"
+        >
+          <i class="fa-brands fa-instagram footer__icon"></i>
+        </a>
+
+        <a
+          href="https://github.com/gymcoding"
+          target="_blank"
+          title="짐코딩 깃헙 링크"
+        >
+          <i class="fa-brands fa-github footer__icon"></i>
+        </a>
+      </div>
+      <p class="footer__copy"> 
+        Copyright &#38; &#169; &copy; 2024 짐코딩 All rights reserved.</p>
+    </footer> 
+  </body>
+</html>
